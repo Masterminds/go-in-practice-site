@@ -1,0 +1,60 @@
+body {
+  /* background: url(/img/background.png); */
+}
+
+.gip-nav {
+  background: #333333;
+}
+
+a.gip-mobile-menu-title {
+  color: #fff;
+}
+
+aside.left-off-canvas-menu {
+  box-shadow: inset -10px 0 5px -5px rgba(0, 0, 0, .5);
+}
+
+ul.off-canvas-list li label {
+  background: transparent;
+  border-top: 0;
+}
+
+
+.gip-content-header {
+  background: #3e5a99;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.gip-content-header h1,
+.gip-content-header h3 {
+  color: #fff;
+}
+
+.gip-header-buttons {
+  margin-top: 15px;
+}
+
+.gip-subheader {
+  color: white;
+  font-size: 18px;
+}
+
+.gip-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.gip-techniques {
+  list-style: none;
+}
+
+.gip-no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.gip-techniques li:before {
+  content: "\2713";
+  margin-left: -21px;
+  margin-right: 5px;
+}
