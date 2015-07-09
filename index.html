@@ -13,7 +13,7 @@
   <body>
 
     <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
+      <div class="inner-wrap" itemscope itemtype="http://schema.org/Product">
         <nav class="tab-bar">
           <a class="left-off-canvas-toggle menu-icon"><span>Menu</span></a>
         </nav>
@@ -32,7 +32,7 @@
               <div class="large-9 columns">
                 <div class="row">
                   <div class="large-12 columns">
-                    <h1>Go in Practice</h1>
+                    <h1 itemprop="name">Go in Practice</h1>
                     <h3>A cookbook of patterns for Go development</h3>
                     <p class="gip-subheader hide-for-small">
                       Learn techniques to help you move from exploring Go to using it
@@ -41,22 +41,20 @@
                   </div>
                   <br>
                   <div class="medium-6 columns gip-header-buttons" id="get-book">
-                    <a href="http://www.manning.com/butcher/" class="large button hide-for-small">Get The Book</a>
+                    <a itemprop="url" href="http://www.manning.com/butcher/" class="large button hide-for-small">Get The Book</a>
                     <a href="http://www.manning.com/butcher/" class="small button show-for-small">Get The Book</a>
                   </div>
                 </div>
               </div>
               <div class="large-3 columns">
-                <img class="show-for-large" src="assets/cover.png">
+                <img itemprop="image" class="show-for-large" src="assets/cover.png">
               </div>
             </div>
           </header>
           <br>
           <div class="row">
             <div class="medium-12 columns">
-              <p>Go in Practice is a cookbook style book of patterns for Go development. This book contains
-              patterns for DevOps, CloudOps, building cloud and web services, leveraging the cloud, web 
-              development, and much much more.</p>
+              <p itemprop="description">Go in Practice is a cookbook style book of patterns for Go development. This book contains patterns for DevOps, CloudOps, building cloud and web services, leveraging the cloud, web development, and much much more.</p>
               <p>The Manning Early Access Program (MEAP) allows you to have access to the book while it is
               being written. During this time you can read the book and provide feedback along the way. You
               can learn more on <a href="http://www.manning.com/butcher/">the Manning Publication website</a>.
