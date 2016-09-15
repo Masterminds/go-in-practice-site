@@ -1,24 +1,66 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
 body {
-  /* background: url(/img/background.png); */
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.gip-nav {
-  background: #333333;
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
-a.gip-mobile-menu-title {
-  color: #fff;
+.content {
+  min-height: 100%;
+  position: relative;
 }
 
-aside.left-off-canvas-menu {
-  box-shadow: inset -10px 0 5px -5px rgba(0, 0, 0, .5);
+.content img {
+    max-width: 100%;
 }
 
-ul.off-canvas-list li label {
-  background: transparent;
-  border-top: 0;
+h1 {
+  color: rgb(117, 118, 144)
 }
 
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
+.row::before, .row::after {
+  content: ' ';
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+
+.banner {
+    background-color: rgb(111, 158, 152);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.column-image {
+    max-width: 255px;
+    float: left;
+}
+
+.inner-content {
+    margin-left: 295px;
+}
 
 .gip-content-header {
   background: #3e5a99;
@@ -26,13 +68,26 @@ ul.off-canvas-list li label {
   padding-bottom: 15px;
 }
 
-.gip-content-header h1,
-.gip-content-header h3 {
+.inner-content h1,
+.inner-content h3 {
   color: #fff;
 }
 
-.gip-header-buttons {
-  margin-top: 15px;
+.button {
+  background-color: rgb(127, 106, 53);
+  display: inline-block;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: rgb(191, 181, 86);
+}
+
+a.button {
+  color: #fff;
+  text-decoration: none;
 }
 
 .gip-subheader {
@@ -49,6 +104,41 @@ ul.off-canvas-list li label {
   list-style: none;
 }
 
+.column-1 {
+  width: 50%;
+  float: left;
+}
+
+.column-2 {
+  width: 50%;
+  float: right;
+}
+
+.column-2 p {
+    padding-left: 20px;
+}
+
+.column-2 h3 {
+    padding-left: 20px;
+}
+
+.column-1 p {
+    padding-right: 20px;
+}
+
+.column-1 h3,
+.column-2 h3 {
+    margin-top: 0;
+}
+
+.column-1 blockquote footer {
+    padding-left: 20px;
+}
+
+.column-2 blockquote footer {
+    padding-left: 40px;
+}
+
 .gip-no-bottom-margin {
   margin-bottom: 0;
 }
@@ -57,4 +147,61 @@ ul.off-canvas-list li label {
   content: "\2713";
   margin-left: -21px;
   margin-right: 5px;
+}
+
+blockquote {
+    margin-top: 40px;
+}
+
+blockquote footer {
+    color: #666;
+}
+
+blockquote p:before {
+    content: "\201C";
+}
+
+blockquote p:after {
+    content: "\201D";
+}
+
+@media screen and (max-width: 34em) {
+  .column-image {
+      text-align: center;
+      min-width: 100%;
+      float: none;
+  }
+  .small-center {
+      text-align: center;
+  }
+
+  .inner-content {
+      margin-left: 0;
+  }
+
+  .column-1,
+  .column-2 {
+      float: none;
+      width: 100%;
+  }
+
+  .column-2 ul {
+      margin-top: 0;
+  }
+
+  .column-2 p {
+      padding-left: 0;
+  }
+
+  .column-2 h3 {
+      padding-left: 0;
+  }
+
+  .column-1 p {
+      padding-right: 0;
+  }
+
+  .column-2 blockquote footer {
+      padding-left: 20px;
+  }
 }

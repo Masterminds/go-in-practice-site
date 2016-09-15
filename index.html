@@ -4,200 +4,112 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go in Practice | A Cookbook of Go Recipes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css" />
     <link rel="stylesheet" href="assets/gip.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/vendor/modernizr.js"></script>
     <meta keywords="Go, golang, book, Manning Publications, cookbook, recipes">
     <meta description="Go in Practice is a cookbook style book of techiques to develop Go applications.">
   </head>
   <body>
-
-    <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap" itemscope itemtype="http://schema.org/Product">
-        <nav class="tab-bar">
-          <a class="left-off-canvas-toggle menu-icon"><span>Menu</span></a>
-        </nav>
-        <aside class="left-off-canvas-menu">
-          <ul class="off-canvas-list">
-            <li><label class="first">Go in Practice</label></li>
-            <li><a href="#get-book">Get the book</a></li>
-            <li><a href="#techniques">Techniques</a></li>
-            <li><a href="#sample-chapter">Sample Chapter</a></li>
-            <li><a href="#about-authors">About the Authors</a></li>
-          </ul>
-        </aside>
-
-          <header class="gip-content-header">
-            <div class="row">
-              <div class="large-9 columns">
-                <div class="row">
-                  <div class="large-12 columns">
-                    <h1 itemprop="name">Go in Practice</h1>
-                    <h3>A cookbook of patterns for Go development</h3>
-                    <p class="gip-subheader hide-for-small">
-                      Learn techniques to help you move from exploring Go to using it
-                      effectively in production.
-                    </p>
-                  </div>
-                  <br>
-                  <div class="medium-6 columns gip-header-buttons" id="get-book">
-                    <a itemprop="url" href="https://www.manning.com/books/go-in-practice" class="large button hide-for-small">Get The Book</a>
-                    <a href="https://www.manning.com/books/go-in-practice" class="small button show-for-small">Get The Book</a>
-                  </div>
-                </div>
-              </div>
-              <div class="large-3 columns">
-                <img itemprop="image" class="show-for-large" src="assets/cover.png">
-              </div>
-            </div>
-          </header>
-          <br>
-          <div class="row">
-            <div class="medium-12 columns">
-              <p itemprop="description">Go in Practice is a cookbook style book of patterns for Go development. This book contains patterns for DevOps, CloudOps, building cloud and web services, leveraging the cloud, web development, and much much more.</p>
-              <p>The Manning Early Access Program (MEAP) allows you to have access to the book while it is
-              being written. During this time you can read the book and provide feedback along the way. You
-              can learn more on <a href="https://www.manning.com/books/go-in-practice">the Manning Publication website</a>.
-            </div>
+    <div class="content" itemscope itemtype="http://schema.org/Product">
+      <div class="row small-center">
+        <h1 itemprop="name">Go in Practice</h1>
+      </div>
+      <div class="banner">
+        <div class="row small-center">
+          <div class="column-image">
+            <img itemprop="image" alt="Go in Practice cover" src="assets/cover.png">
           </div>
-          <br>
-          <div class="row">
-            <div class="medium-12 columns">
-              <div class="row">
-                <!-- Content -->
-
-                <div class="medium-8 columns">
-                  <div class="panel radius">
-                    <div class="row">
-                      <div class="large-6 small-6 columns">
-                        <h4>About Go</h4>
-                        <hr>
-
-                        <h5 class="subheader">
-                          Go, sometimes referred to as golang, is a modern systems
-                          programming language. Go provides the tools to rapidly build
-                          web, cloud, and systems applications.
-                        </h5>
-
-                      </div>
-
-                      <div class="large-6 small-6 columns">
-                        <p>
-                        Designed with  modern hardware in mind, Go is a statically typed
-                        and compiled language providing garbage collection, concurrency,
-                        multiple return values, a modern standard library, package
-                        management, and more.  Go is an engineered language designed
-                        to solve real world problems. It was born from the experience
-                        of luminary software engineers.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="medium-4 columns">
-                  <h4>Download</h4>
-                  <hr>
-                  <a href="https://manning-content.s3.amazonaws.com/download/7/3e99e39-1c30-466d-8c9d-671896e6caa0/ButcherFarina_GoInPractice_MEAP_ch1.pdf">
-                    <div class="panel radius callout" style="text-align: center">
-                      <strong>A Sample Chapter</strong>
-                    </div>
-                  </a>
-
-                  <a href="https://github.com/Masterminds/go-in-practice">
-                    <div class="panel radius callout" style="text-align: center">
-                      <strong>The Code</strong>
-                    </div>
-                  </a>
-                </div><!-- End Content -->
-              </div>
-            </div>
-          </div>
-
-        <div class="row" id="techniques">
-          <div class="large-12 columns">
-            <hr>
-
-            <h2>Techniques</h2>
-            <p>Most of the chapters contain topic introductions followed by a series of recipe like techniques.
-            Each technique shares a recipe for solving a problem with a discussion on the problem and solution.</p>
-
-            <p>The book contains techniques for:</p>
-            <div class="row">
-              <div class="medium-6 columns">
-                <ul class="gip-techniques gip-no-bottom-margin">
-                  <li>Handling Linux style flags in your application.</li>
-                  <li>CLI commands and sub-commands.</li>
-                  <li>How to handle URL routing.</li>
-                  <li>Multiple ways to handle application configuration.</li>
-                  <li>Patterns for working with HTML Templates.</li>
-                  <li>Serving static assets.</li>
-                </ul>
-              </div>
-              <div class="medium-6 columns">
-                <ul class="gip-techniques">
-                  <li>Working with REST APIs (including version handling).</li>
-                  <li>Communicating between cloud services.</li>
-                  <li>Generative and performance testing.</li>
-                  <li>Monitoring the Go runtime in your applications.</li>
-                  <li>Building multi-cloud compatible applications.</li>
-                  <li>And many more...</li>
-                </ul>
-              </div>
-            </div>
+          <div class="inner-content">
+            <h3>A cookbook of techniques for Go development</h3>
+            <p class="gip-subheader" itemprop="description">
+              Go in Practice covers 70 real-world techniques. Techniques are broken down into
+              problems, solutions, and discussions. This is a practical handbook with strategies
+              for day-to-day application development.
+              </style>
+            </p>
+            <a itemprop="url" href="http://amzn.to/2cfE0Pb" class="button">Buy on Amazon</a>
+            <a itemprop="url" href="https://www.manning.com/books/go-in-practice" class="button">Buy E-Book</a>
           </div>
         </div>
+    </div>
 
+    <div class="row">
+      <div class="column-1">
+        <blockquote><p>An invaluable resource you can start using on day one to build
+          high-performance, real-world web applications.</p>
+          <footer>– Gary A. Stafford, Thoughtworks</footer>
+        </blockquote>
+      </div>
+      <div class="column-2">
+          <blockquote><p>A great combination of simple examples with thorough explanations
+            of practical concepts in Go.</p>
+            <footer>– Brandon Titus, Mercury</footer>
+          </blockquote>
+      </div>
+    </div>
 
-        <div class="row" id="sample-chapter">
-          <div class="large-12 columns">
-            <hr>
+    <div class="row" id="techniques">
+      <h2>Techniques</h2>
+      <p>Most of the chapters contain topic introductions followed by a series of recipe like techniques.
+      Each technique shares a recipe for solving a problem with a discussion on the problem and solution.</p>
 
-            <h2>Sample Chapter</h2>
+      <p>The book contains techniques for:</p>
+      <div class="column-1">
+        <ul class="gip-techniques gip-no-bottom-margin">
+          <li>Handling Linux style flags in your application.</li>
+          <li>CLI commands and sub-commands.</li>
+          <li>How to handle URL routing.</li>
+          <li>Multiple ways to handle application configuration.</li>
+          <li>Patterns for working with HTML Templates.</li>
+          <li>Serving static assets.</li>
+        </ul>
+      </div>
+      <div class="column-2">
+        <ul class="gip-techniques">
+          <li>Working with REST APIs (including version handling).</li>
+          <li>Communicating between cloud services.</li>
+          <li>Generative and performance testing.</li>
+          <li>Monitoring the Go runtime in your applications.</li>
+          <li>Building multi-cloud compatible applications.</li>
+          <li>And many more...</li>
+        </ul>
+      </div>
+    </div>
 
-            <div class="row">
-              <div class="small-6 columns">
-                <img src="assets/sample.png">
-              </div>
-              <div class="small-6 columns">
+    <div class="row" id="sample-chapter">
+      <h2>Downloads</h2>
 
-                <p>If you want to try before you buy, chapter 1 is available for free. Chapter 1 introduces Go and
-                provides a brief introduction into the language and landscape. This chapter is different from those
-                that follow. Later chapters provide cookbook style recipes you can apply to your Go applications.
-                These chapters assume you have a working knowledge of the language.</p>
+      <div class="column-1">
+        <img src="assets/sample.png">
+      </div>
+      <div class="column-2">
+        <p>Two sample chapters and the source code are available for download:</p>
+        <p>
+          <a class="button" href="https://manning-content.s3.amazonaws.com/download/3/54700ff-06a5-4307-b323-786293e5a4c2/Sample01.pdf">Chapter 1</a>
+          <a class="button" href="https://manning-content.s3.amazonaws.com/download/3/6f40d42-4b04-40c7-b306-d5c71e40d3ff/Sample03.pdf">Chapter 3</a>
+          <a class="button" href="github.com/Masterminds/go-in-practice">Source Code</a>
+        </p>
+      </div>
+    </div>
 
-                <a href="https://manning-content.s3.amazonaws.com/download/7/3e99e39-1c30-466d-8c9d-671896e6caa0/ButcherFarina_GoInPractice_MEAP_ch1.pdf" class="large button hide-for-small">Read Sample</a>
-                <a href="https://manning-content.s3.amazonaws.com/download/7/3e99e39-1c30-466d-8c9d-671896e6caa0/ButcherFarina_GoInPractice_MEAP_ch1.pdf" class="small button show-for-small">Read Sample</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row" id="about-authors">
+      <h2>About the Authors</h2>
 
-        <div class="row" id="about-authors">
-          <div class="large-12 columns">
-            <hr>
+      <div class="column-1">
+        <h3>Matt Butcher</h3>
+        <p>Matt is a core contributor to <a href="http://github.com/kubernetes/helm">Helm</a> at <a href="http://deis.com">Deis</a>.
+          He is the author of several books on programming and technology, and is a frequent open source contributor.
+          Matt holds a Ph.D. in philosophy, and has taught both Philosophy and Computer Science at Loyola University Chicago.
+          You can find him online at <a href="https://twitter.com/technosophos">@technosophos</a> and <a href="http://technosophos.com">technosophos.com</a>.
+        </p>
+      </div>
 
-            <h2>About the Authors</h2>
-
-            <div class="row">
-              <div class="large-6 columns">
-
-                <h3>Matt Butcher</h3>
-                <p>Matt is a core contributor to <a href="http://deis.io">Deis</a> at <a href="http://engineyard.com">Engine Yard</a>.
-                He is the author of several books on programming and technology, and is a frequent open source contributor.
-                Matt holds a Ph.D. in philosophy, and has taught both Philosophy and Computer Science at Loyola University Chicago.
-               You can find him online at <a href="https://twitter.com/technosophos">@technosophos</a> and <a href="http://technosophos.com">technosophos.com</a>.</p>
-              </div>
-
-              <div class="large-6 columns">
-
-                <h3>Matt Farina</h3>
-                <p>Matt is a Principal Engineer in the Advanced Technology Group at HP. He is an author, speaker, and regular
-                contributor to open source. Matt has been developing software for over 25 years.  You can find him online at
-                <a href="https://twitter.com/mattfarina">@mattfarina</a> and <a href="http://mattfarina.com">mattfarina.com</a>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="column-2">
+        <h3>Matt Farina</h3>
+        <p>Matt is a Principal Engineer in the Advanced Technology Group at Hewlett Packard Enterprise. He is an author, speaker, and regular
+          contributor to open source. Matt has been developing software for over 25 years.  You can find him online at
+          <a href="https://twitter.com/mattfarina">@mattfarina</a> and <a href="http://mattfarina.com">mattfarina.com</a>.</p>
+      </div>
+    </div>
 
         <footer class="row">
           <div class="large-12 columns">
@@ -207,23 +119,16 @@
           </div>
         </footer>
 
-        <a class="exit-off-canvas"></a>
-      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/vendor/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-63185016-1', 'auto');
-      ga('send', 'pageview');
+    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    //   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      //
+    //   ga('create', 'UA-63185016-1', 'auto');
+    //   ga('send', 'pageview');
     </script>
   </body>
 </html>
